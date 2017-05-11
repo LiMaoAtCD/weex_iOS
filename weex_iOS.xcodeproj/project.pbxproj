@@ -12,9 +12,12 @@
 		8736C1761EC4B789007B13CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8736C1741EC4B789007B13CB /* Main.storyboard */; };
 		8736C1781EC4B789007B13CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8736C1771EC4B789007B13CB /* Assets.xcassets */; };
 		8736C17B1EC4B789007B13CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8736C1791EC4B789007B13CB /* LaunchScreen.storyboard */; };
+		A450867CE067A9A2F6D598C4 /* Pods_weex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7E80A0808473CBF9CF317C /* Pods_weex_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F7E80A0808473CBF9CF317C /* Pods_weex_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weex_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA3D4F94F3C5C2DA3936393 /* Pods-weex_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weex_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-weex_iOS/Pods-weex_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8736C16D1EC4B789007B13CB /* weex_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weex_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8736C1701EC4B789007B13CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8736C1721EC4B789007B13CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,8 @@
 		8736C1771EC4B789007B13CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8736C17A1EC4B789007B13CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8736C17C1EC4B789007B13CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8777E14F1EC4B96300028679 /* weex_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weex_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		A4B5CAC4C9A516BD1DBDAEF7 /* Pods-weex_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weex_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weex_iOS/Pods-weex_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A450867CE067A9A2F6D598C4 /* Pods_weex_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A14FB5574F5C164D43C23AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F7E80A0808473CBF9CF317C /* Pods_weex_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8736C1641EC4B789007B13CB = {
 			isa = PBXGroup;
 			children = (
 				8736C16F1EC4B789007B13CB /* weex_iOS */,
 				8736C16E1EC4B789007B13CB /* Products */,
+				F78999A6E7AFCE236F1C9FFA /* Pods */,
+				5A14FB5574F5C164D43C23AF /* Frameworks */,
+				8777E14F1EC4B96300028679 /* weex_iOS-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,15 @@
 			path = weex_iOS;
 			sourceTree = "<group>";
 		};
+		F78999A6E7AFCE236F1C9FFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4B5CAC4C9A516BD1DBDAEF7 /* Pods-weex_iOS.debug.xcconfig */,
+				7BA3D4F94F3C5C2DA3936393 /* Pods-weex_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8736C17F1EC4B789007B13CB /* Build configuration list for PBXNativeTarget "weex_iOS" */;
 			buildPhases = (
+				5065CD515D8D86D1AA1BD79D /* [CP] Check Pods Manifest.lock */,
 				8736C1691EC4B789007B13CB /* Sources */,
 				8736C16A1EC4B789007B13CB /* Frameworks */,
 				8736C16B1EC4B789007B13CB /* Resources */,
+				6EDE4FBE510F876140DE3E2F /* [CP] Embed Pods Frameworks */,
+				83D46D52E8FC8600B7F25889 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,8 @@
 				TargetAttributes = {
 					8736C16C1EC4B789007B13CB = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = SWM5MN65PP;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5065CD515D8D86D1AA1BD79D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6EDE4FBE510F876140DE3E2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weex_iOS/Pods-weex_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D46D52E8FC8600B7F25889 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weex_iOS/Pods-weex_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8736C1691EC4B789007B13CB /* Sources */ = {
@@ -258,24 +337,33 @@
 		};
 		8736C1801EC4B789007B13CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B5CAC4C9A516BD1DBDAEF7 /* Pods-weex_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SWM5MN65PP;
 				INFOPLIST_FILE = weex_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MarcoLi.weex-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "weex_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8736C1811EC4B789007B13CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA3D4F94F3C5C2DA3936393 /* Pods-weex_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SWM5MN65PP;
 				INFOPLIST_FILE = weex_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MarcoLi.weex-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "weex_iOS-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,6 +387,7 @@
 				8736C1811EC4B789007B13CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
