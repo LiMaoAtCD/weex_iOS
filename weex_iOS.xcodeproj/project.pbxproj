@@ -13,6 +13,7 @@
 		8736C1781EC4B789007B13CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8736C1771EC4B789007B13CB /* Assets.xcassets */; };
 		8736C17B1EC4B789007B13CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8736C1791EC4B789007B13CB /* LaunchScreen.storyboard */; };
 		8777E1561EC5345200028679 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8777E1551EC5345200028679 /* WXImgLoaderDefaultImpl.m */; };
+		8777E15A1EC5395700028679 /* WXBaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8777E1591EC5395700028679 /* WXBaseModule.m */; };
 		A450867CE067A9A2F6D598C4 /* Pods_weex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7E80A0808473CBF9CF317C /* Pods_weex_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		8777E14F1EC4B96300028679 /* weex_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weex_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		8777E1541EC5345200028679 /* WXImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
 		8777E1551EC5345200028679 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
+		8777E1581EC5395700028679 /* WXBaseModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBaseModule.h; sourceTree = "<group>"; };
+		8777E1591EC5395700028679 /* WXBaseModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBaseModule.m; sourceTree = "<group>"; };
 		A4B5CAC4C9A516BD1DBDAEF7 /* Pods-weex_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weex_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weex_iOS/Pods-weex_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +77,7 @@
 		8736C16F1EC4B789007B13CB /* weex_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8777E1571EC5373D00028679 /* Modules */,
 				8777E1531EC5335400028679 /* Handlers */,
 				8736C1701EC4B789007B13CB /* AppDelegate.swift */,
 				8736C1721EC4B789007B13CB /* ViewController.swift */,
@@ -92,6 +96,15 @@
 				8777E1551EC5345200028679 /* WXImgLoaderDefaultImpl.m */,
 			);
 			name = Handlers;
+			sourceTree = "<group>";
+		};
+		8777E1571EC5373D00028679 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8777E1581EC5395700028679 /* WXBaseModule.h */,
+				8777E1591EC5395700028679 /* WXBaseModule.m */,
+			);
+			name = Modules;
 			sourceTree = "<group>";
 		};
 		F78999A6E7AFCE236F1C9FFA /* Pods */ = {
@@ -229,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8736C1731EC4B789007B13CB /* ViewController.swift in Sources */,
+				8777E15A1EC5395700028679 /* WXBaseModule.m in Sources */,
 				8736C1711EC4B789007B13CB /* AppDelegate.swift in Sources */,
 				8777E1561EC5345200028679 /* WXImgLoaderDefaultImpl.m in Sources */,
 			);

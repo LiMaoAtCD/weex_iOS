@@ -55,6 +55,11 @@ extension AppDelegate {
         WXLog.setLogLevel(.all)
 //        [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
         WXSDKEngine.registerHandler(WXImgLoaderDefaultImpl(), with: WXImgLoaderProtocol.self)
+        configureModules()
+    }
+    
+    func configureModules() {
+        WXSDKEngine.registerModule("base", with: WXBaseModule.self)
     }
     
     

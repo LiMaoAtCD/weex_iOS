@@ -4,3 +4,4 @@
 
 #import <WeexSDK/WeexSDK.h>
 #import "WXImgLoaderDefaultImpl.h"
+#import "WXBaseModule.h"
