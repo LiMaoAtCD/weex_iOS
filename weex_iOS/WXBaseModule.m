@@ -12,7 +12,7 @@
 @implementation WXBaseModule
 @synthesize weexInstance;
 
-WX_EXPORT_METHOD_SYNC(@selector(getUserInfo))
+WX_EXPORT_METHOD(@selector(getUserInfo))
 
 -(NSString*)getUserInfo {
     return @"limao";

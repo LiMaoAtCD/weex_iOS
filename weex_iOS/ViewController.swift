@@ -45,7 +45,8 @@ class ViewController: UIViewController {
             print("render finished")
         }
         
-        url = "http://192.168.2.101:8080/dist/app.weex.js"
+        url = Bundle.main.url(forResource: "foo", withExtension: "js")?.absoluteString
+//        url = "http://192.168.2.101:8080/dist/app.weex.js"
         
     }
 

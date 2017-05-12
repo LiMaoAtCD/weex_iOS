@@ -14,6 +14,7 @@
 		8736C17B1EC4B789007B13CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8736C1791EC4B789007B13CB /* LaunchScreen.storyboard */; };
 		8777E1561EC5345200028679 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8777E1551EC5345200028679 /* WXImgLoaderDefaultImpl.m */; };
 		8777E15A1EC5395700028679 /* WXBaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8777E1591EC5395700028679 /* WXBaseModule.m */; };
+		8777E1601EC5426700028679 /* foo.js in Resources */ = {isa = PBXBuildFile; fileRef = 8777E15F1EC5426700028679 /* foo.js */; };
 		A450867CE067A9A2F6D598C4 /* Pods_weex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7E80A0808473CBF9CF317C /* Pods_weex_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		8777E1551EC5345200028679 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
 		8777E1581EC5395700028679 /* WXBaseModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBaseModule.h; sourceTree = "<group>"; };
 		8777E1591EC5395700028679 /* WXBaseModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBaseModule.m; sourceTree = "<group>"; };
+		8777E15F1EC5426700028679 /* foo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = foo.js; sourceTree = "<group>"; };
 		A4B5CAC4C9A516BD1DBDAEF7 /* Pods-weex_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weex_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weex_iOS/Pods-weex_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 		8736C1641EC4B789007B13CB = {
 			isa = PBXGroup;
 			children = (
+				8777E15F1EC5426700028679 /* foo.js */,
 				8736C16F1EC4B789007B13CB /* weex_iOS */,
 				8736C16E1EC4B789007B13CB /* Products */,
 				F78999A6E7AFCE236F1C9FFA /* Pods */,
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8736C17B1EC4B789007B13CB /* LaunchScreen.storyboard in Resources */,
+				8777E1601EC5426700028679 /* foo.js in Resources */,
 				8736C1781EC4B789007B13CB /* Assets.xcassets in Resources */,
 				8736C1761EC4B789007B13CB /* Main.storyboard in Resources */,
 			);

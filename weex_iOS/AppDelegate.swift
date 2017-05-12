@@ -52,14 +52,14 @@ extension AppDelegate {
         WXAppConfiguration.setAppVersion("")
         WXSDKEngine.initSDKEnvironment()
         
-        WXLog.setLogLevel(.all)
+        WXLog.setLogLevel(.debug)
 //        [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
         WXSDKEngine.registerHandler(WXImgLoaderDefaultImpl(), with: WXImgLoaderProtocol.self)
         configureModules()
     }
     
     func configureModules() {
-        WXSDKEngine.registerModule("base", with: WXBaseModule.self)
+        WXSDKEngine.registerModule("userinfo", with: WXBaseModule.self)
     }
     
     
