@@ -59,7 +59,7 @@ extension AppDelegate {
     }
     
     func configureModules() {
-        WXSDKEngine.registerModule("userinfo", with: WXBaseModule.self)
+        WXSDKEngine.registerModule("WCoverModule", with: WCoverModule.self)
     }
     
     

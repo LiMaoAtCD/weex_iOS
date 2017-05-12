@@ -16,6 +16,7 @@
 		8777E15A1EC5395700028679 /* WXBaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8777E1591EC5395700028679 /* WXBaseModule.m */; };
 		8777E1601EC5426700028679 /* foo.js in Resources */ = {isa = PBXBuildFile; fileRef = 8777E15F1EC5426700028679 /* foo.js */; };
 		A450867CE067A9A2F6D598C4 /* Pods_weex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7E80A0808473CBF9CF317C /* Pods_weex_iOS.framework */; };
+		DA39DADF1EC5594800FC7C87 /* WCoverModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39DADE1EC5594800FC7C87 /* WCoverModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		8777E1591EC5395700028679 /* WXBaseModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBaseModule.m; sourceTree = "<group>"; };
 		8777E15F1EC5426700028679 /* foo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = foo.js; sourceTree = "<group>"; };
 		A4B5CAC4C9A516BD1DBDAEF7 /* Pods-weex_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weex_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weex_iOS/Pods-weex_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DA39DADD1EC5594800FC7C87 /* WCoverModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCoverModule.h; sourceTree = "<group>"; };
+		DA39DADE1EC5594800FC7C87 /* WCoverModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCoverModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 			children = (
 				8777E1581EC5395700028679 /* WXBaseModule.h */,
 				8777E1591EC5395700028679 /* WXBaseModule.m */,
+				DA39DADD1EC5594800FC7C87 /* WCoverModule.h */,
+				DA39DADE1EC5594800FC7C87 /* WCoverModule.m */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				8777E15A1EC5395700028679 /* WXBaseModule.m in Sources */,
 				8736C1711EC4B789007B13CB /* AppDelegate.swift in Sources */,
 				8777E1561EC5345200028679 /* WXImgLoaderDefaultImpl.m in Sources */,
+				DA39DADF1EC5594800FC7C87 /* WCoverModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
