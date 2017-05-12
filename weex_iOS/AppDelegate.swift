@@ -53,6 +53,10 @@ extension AppDelegate {
         WXSDKEngine.initSDKEnvironment()
         
         WXLog.setLogLevel(.all)
+//        [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
+        WXSDKEngine.registerHandler(WXImgLoaderDefaultImpl(), with: WXImgLoaderProtocol.self)
     }
+    
+    
 }
 

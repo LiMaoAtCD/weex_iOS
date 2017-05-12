@@ -7,5 +7,5 @@ target 'weex_iOS' do
 
   # Pods for weex_iOS
 	pod 'WeexSDK'
-	pod 'Kingfisher'
+	pod 'SDWebImage'
 end

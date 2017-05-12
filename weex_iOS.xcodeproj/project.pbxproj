@@ -12,6 +12,7 @@
 		8736C1761EC4B789007B13CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8736C1741EC4B789007B13CB /* Main.storyboard */; };
 		8736C1781EC4B789007B13CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8736C1771EC4B789007B13CB /* Assets.xcassets */; };
 		8736C17B1EC4B789007B13CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8736C1791EC4B789007B13CB /* LaunchScreen.storyboard */; };
+		8777E1561EC5345200028679 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8777E1551EC5345200028679 /* WXImgLoaderDefaultImpl.m */; };
 		A450867CE067A9A2F6D598C4 /* Pods_weex_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7E80A0808473CBF9CF317C /* Pods_weex_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 		8736C17A1EC4B789007B13CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8736C17C1EC4B789007B13CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8777E14F1EC4B96300028679 /* weex_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weex_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		8777E1541EC5345200028679 /* WXImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
+		8777E1551EC5345200028679 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
 		A4B5CAC4C9A516BD1DBDAEF7 /* Pods-weex_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weex_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weex_iOS/Pods-weex_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +74,7 @@
 		8736C16F1EC4B789007B13CB /* weex_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8777E1531EC5335400028679 /* Handlers */,
 				8736C1701EC4B789007B13CB /* AppDelegate.swift */,
 				8736C1721EC4B789007B13CB /* ViewController.swift */,
 				8736C1741EC4B789007B13CB /* Main.storyboard */,
@@ -79,6 +83,15 @@
 				8736C17C1EC4B789007B13CB /* Info.plist */,
 			);
 			path = weex_iOS;
+			sourceTree = "<group>";
+		};
+		8777E1531EC5335400028679 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				8777E1541EC5345200028679 /* WXImgLoaderDefaultImpl.h */,
+				8777E1551EC5345200028679 /* WXImgLoaderDefaultImpl.m */,
+			);
+			name = Handlers;
 			sourceTree = "<group>";
 		};
 		F78999A6E7AFCE236F1C9FFA /* Pods */ = {
@@ -217,6 +230,7 @@
 			files = (
 				8736C1731EC4B789007B13CB /* ViewController.swift in Sources */,
 				8736C1711EC4B789007B13CB /* AppDelegate.swift in Sources */,
+				8777E1561EC5345200028679 /* WXImgLoaderDefaultImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

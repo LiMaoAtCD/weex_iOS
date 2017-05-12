@@ -1,18 +1,20 @@
 PODS:
-  - Kingfisher (3.6.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SocketRocket (0.5.1)
   - WeexSDK (0.11.0):
     - SocketRocket
 
 DEPENDENCIES:
-  - Kingfisher
+  - SDWebImage
   - WeexSDK
 
 SPEC CHECKSUMS:
-  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   WeexSDK: f9cfe6adc91fba3ca5e36bc9808bf1b6e8be2106
 
-PODFILE CHECKSUM: dbbe2712e14a62db13f3b3026403067c1f8a02f7
+PODFILE CHECKSUM: b7c818d8426740b5a3c4d7f7ad4f1b9e741128ee
 
 COCOAPODS: 1.2.1
