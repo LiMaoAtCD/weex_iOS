@@ -47,19 +47,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     func configureWeex() {
-        WXAppConfiguration.setAppName("")
-        WXAppConfiguration.setAppGroup("")
-        WXAppConfiguration.setAppVersion("")
+        WXAppConfiguration.setAppName("weex_iOS")
+        WXAppConfiguration.setAppGroup("Morning")
+        WXAppConfiguration.setAppVersion("1.0.0")
         WXSDKEngine.initSDKEnvironment()
         
         WXLog.setLogLevel(.debug)
-//        [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
-        WXSDKEngine.registerHandler(WXImgLoaderDefaultImpl(), with: WXImgLoaderProtocol.self)
         configureModules()
+        configureComponents()
+        cofigureHandlers()
     }
     
     func configureModules() {
         WXSDKEngine.registerModule("WCoverModule", with: WCoverModule.self)
+        WXSDKEngine.registerModule("WXBaseModule", with: WXBaseModule.self)
+    }
+    
+    func configureComponents() {
+        
+    }
+    
+    func cofigureHandlers() {
+        WXSDKEngine.registerHandler(WXImgLoaderDefaultImpl(), with: WXImgLoaderProtocol.self)
     }
     
     
