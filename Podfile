@@ -8,4 +8,5 @@ target 'weex_iOS' do
   # Pods for weex_iOS
 	pod 'WeexSDK'
 	pod 'SDWebImage'
+#    pod  'WXDevtool', '0.9.5', :configurations => ['Debug']
 end
